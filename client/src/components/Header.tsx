@@ -19,10 +19,8 @@ export default function Header() {
   }, []);
 
   const navLinks = [
-    { href: "#problema", label: "El Problema" },
-    { href: "#solucion", label: "Solución" },
-    { href: "#beneficios", label: "Beneficios" },
-    { href: "#calculadora", label: "Calculadora" },
+    { href: "#programa", label: "El Programa" },
+    { href: "#testimonios", label: "Testimonios" },
     { href: "#faq", label: "FAQ" },
   ];
 
