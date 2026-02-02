@@ -73,7 +73,7 @@ export default function ProgramContentSection() {
   ];
 
   return (
-    <section id="programa" className="py-20 md:py-28 bg-cream/30 relative overflow-hidden" ref={ref}>
+    <section id="programa" className="py-20 md:py-28 bg-white relative overflow-hidden" ref={ref}>
       {/* Background decoration */}
       <div className="absolute inset-0 opacity-20">
         <div className="absolute top-20 right-10 w-72 h-72 bg-forest/20 rounded-full blur-3xl" />
