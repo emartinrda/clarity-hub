@@ -20,6 +20,7 @@ export default function Header() {
 
   const navLinks = [
     { href: "#programa", label: "El Programa" },
+    { href: "#calculadora", label: "Calculadora" },
     { href: "#testimonios", label: "Testimonios" },
     { href: "#faq", label: "FAQ" },
   ];
