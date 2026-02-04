@@ -43,7 +43,7 @@ export default function SocialProofSection() {
   ];
 
   return (
-    <section id="testimonios" className="py-20 md:py-28 bg-mint/20 text-foreground relative overflow-hidden" ref={ref}>
+    <section className="py-20 md:py-28 bg-mint/20 text-foreground relative overflow-hidden" ref={ref}>
       {/* Background decoration */}
       <div className="absolute inset-0 opacity-20">
         <div className="absolute top-20 left-10 w-72 h-72 bg-orange rounded-full blur-3xl" />

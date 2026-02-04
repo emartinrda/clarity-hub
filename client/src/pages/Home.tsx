@@ -1,9 +1,11 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import HeroSection from "@/components/sections/HeroSection";
-import ProgramContentSection from "@/components/sections/ProgramContentSection";
-import CalculatorSection from "@/components/sections/CalculatorSection";
+import ProblemSection from "@/components/sections/ProblemSection";
+import SolutionSection from "@/components/sections/SolutionSection";
+import BenefitsSection from "@/components/sections/BenefitsSection";
 import SocialProofSection from "@/components/sections/SocialProofSection";
+import CalculatorSection from "@/components/sections/CalculatorSection";
 import FAQSection from "@/components/sections/FAQSection";
 import CTASection from "@/components/sections/CTASection";
 
@@ -13,22 +15,13 @@ export default function Home() {
       <Header />
       
       <main className="flex-1">
-        {/* SECCIÓN 1: HERO (Detiene + Convence) */}
         <HeroSection />
-        
-        {/* SECCIÓN 2: QUÉ INCLUYE (Detalles del Programa) */}
-        <ProgramContentSection />
-        
-        {/* SECCIÓN 3: CALCULADORA ROI */}
-        <CalculatorSection />
-        
-        {/* SECCIÓN 4: SOCIAL PROOF (Credibilidad) */}
+        <ProblemSection />
+        <SolutionSection />
+        <BenefitsSection />
         <SocialProofSection />
-        
-        {/* SECCIÓN 5: FAQ (Responde últimas dudas) */}
+        <CalculatorSection />
         <FAQSection />
-        
-        {/* SECCIÓN 6: PRICING & CTA (Cierre de venta - ÚLTIMO) */}
         <CTASection />
       </main>
 
