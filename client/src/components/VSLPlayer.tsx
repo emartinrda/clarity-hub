@@ -8,7 +8,7 @@ interface VSLPlayerProps {
 }
 
 // URL del video - usa variable de entorno o fallback
-const VSL_VIDEO_URL = import.meta.env.VITE_VSL_VIDEO_URL || "https://clarityhub.b-cdn.net/vsl.mp4";
+const VSL_VIDEO_URL = import.meta.env.VITE_VSL_VIDEO_URL || "https://pub-bb2573ea720b4fb5a0d5541e650bf440.r2.dev/Vsl.mp4";
 
 export default function VSLPlayer({ onVideoEnd }: VSLPlayerProps) {
   const videoRef = useRef<HTMLVideoElement>(null);
@@ -24,8 +24,11 @@ export default function VSLPlayer({ onVideoEnd }: VSLPlayerProps) {
           "current-time",
           "mute",
           "volume",
+          "settings",
           "fullscreen",
         ],
+        settings: ["speed"],
+        speed: { selected: 1, options: [1, 1.3, 1.5, 2] },
         autoplay: false,
         clickToPlay: true,
         hideControls: true,
