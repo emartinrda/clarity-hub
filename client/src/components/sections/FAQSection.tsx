@@ -48,6 +48,10 @@ export default function FAQSection() {
       question: "¿Qué diferencia hay entre esto y contratar un consultor tradicional?",
       answer: "La mayoría de consultores te entregan un PDF con recomendaciones que nadie lee. Este programa incluye acompañamiento en la implementación, plantillas listas para usar, prompts probados, scripts ETL, y guías de preparación de datos que eliminan el 70% del trabajo técnico. Es acción, no teoría.",
     },
+    {
+      question: "¿Qué pasa si necesito que lo hagan por mí?",
+      answer: "Además de la formación, ofrecemos servicios personalizados: Discovery Express (diagnóstico profundo de tu operación en 48-72h) y Consultoría + Implementación (diseñamos y ejecutamos la automatización completa). Puedes empezar con la formación y luego escalar, o ir directo al servicio que necesites. Más detalles en la sección de Servicios.",
+    },
   ];
 
   return (

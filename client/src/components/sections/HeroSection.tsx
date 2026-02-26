@@ -44,19 +44,21 @@ export default function HeroSection() {
               className="inline-flex items-center gap-2 bg-mint/50 text-forest px-4 py-2 rounded-full text-sm font-medium mb-6"
             >
               <span className="w-2 h-2 bg-forest rounded-full animate-pulse" />
-              +13 años de experiencia en automatización
+              Formación + Comunidad en Automatización e IA
             </motion.div>
 
             {/* Main headline */}
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-semibold text-foreground mb-6 leading-tight">
-              Implementa IA y Automatización{" "}
-              <span className="gradient-text">3-6x Más Rápido</span>
+              Automatiza Tu Operación con IA y{" "}
+              <span className="gradient-text">Reduce Costos Hasta 50%</span>{" "}
+              Sin Esperar Meses de Implementación
             </h1>
 
             {/* Subheadline */}
-            <p className="text-lg md:text-xl text-muted-foreground mb-6 max-w-2xl mx-auto">
-              Ayudo a empresas medianas y grandes a evitar arquitecturas fallidas 
-              que cuestan <span className="text-destructive font-medium">meses y mucho dinero</span> a la basura.
+            <p className="text-lg md:text-xl text-muted-foreground mb-6 max-w-3xl mx-auto">
+              La formación que te entrena para liderar proyectos de automatización e IA desde cero: 
+              identifica quick wins en 48h, implementa sin caos, y escala 3 procesos en 90 días. 
+              Metodología probada en <span className="text-foreground font-medium">+100 empresas</span> (desde startups hasta Fortune Global 500).
             </p>
           </motion.div>
 
@@ -133,7 +135,7 @@ export default function HeroSection() {
       </div>
 
       {/* Wave divider */}
-      <div className="absolute bottom-0 left-0 right-0">
+      <div className="absolute bottom-0 left-0 right-0 pointer-events-none">
         <svg
           viewBox="0 0 1440 120"
           fill="none"

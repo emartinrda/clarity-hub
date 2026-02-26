@@ -19,11 +19,11 @@ export default function Header() {
   }, []);
 
   const navLinks = [
-    { href: "#problema", label: "El Problema" },
-    { href: "#solucion", label: "Solución" },
-    { href: "#beneficios", label: "Beneficios" },
+    { href: "#programa", label: "El Programa" },
     { href: "#calculadora", label: "Calculadora" },
+    { href: "#testimonios", label: "Testimonios" },
     { href: "#faq", label: "FAQ" },
+    { href: "#servicios", label: "Servicios" },
   ];
 
   return (
@@ -44,8 +44,6 @@ export default function Header() {
               className="w-full h-full object-contain object-left"
             />
           </div>
-
-
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center gap-8">

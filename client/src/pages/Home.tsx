@@ -1,12 +1,12 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import HeroSection from "@/components/sections/HeroSection";
-import ProblemSection from "@/components/sections/ProblemSection";
-import SolutionSection from "@/components/sections/SolutionSection";
-import BenefitsSection from "@/components/sections/BenefitsSection";
+import ProgramContentSection from "@/components/sections/ProgramContentSection";
+import TargetAudienceSection from "@/components/sections/TargetAudienceSection";
 import SocialProofSection from "@/components/sections/SocialProofSection";
 import CalculatorSection from "@/components/sections/CalculatorSection";
 import FAQSection from "@/components/sections/FAQSection";
+import ServicesSection from "@/components/sections/ServicesSection";
 import CTASection from "@/components/sections/CTASection";
 
 export default function Home() {
@@ -15,13 +15,21 @@ export default function Home() {
       <Header />
       
       <main className="flex-1">
+        {/* 1. Hero: Headline + VSL + CTA */}
         <HeroSection />
-        <ProblemSection />
-        <SolutionSection />
-        <BenefitsSection />
-        <SocialProofSection />
+        {/* 2. Qué Incluye el Programa */}
+        <ProgramContentSection />
+        {/* 3. Para Quién Es */}
+        <TargetAudienceSection />
+        {/* 4. Calculadora ROI */}
         <CalculatorSection />
+        {/* 5. Social Proof / Testimonios */}
+        <SocialProofSection />
+        {/* 6. FAQ */}
         <FAQSection />
+        {/* 7. Servicios DFY (Discovery + Consultoría) */}
+        <ServicesSection />
+        {/* 8. CTA Final */}
         <CTASection />
       </main>
 

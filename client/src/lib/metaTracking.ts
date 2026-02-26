@@ -137,6 +137,29 @@ export const trackLead = (contentName: string, contentCategory: string) => {
 };
 
 /**
+ * Track Contact event for DFY services (WhatsApp)
+ */
+export const trackContact = (serviceName: string, serviceValue: number) => {
+  if (typeof window === 'undefined') return;
+
+  const eventId = generateEventId();
+  const customData = {
+    content_name: serviceName,
+    content_category: 'DFY Service',
+    value: serviceValue,
+    currency: 'USD',
+  };
+
+  // Track on client-side
+  if (window.fbq) {
+    window.fbq('track', 'Contact', customData);
+  }
+
+  // Track on server-side
+  sendServerEvent('Contact', eventId, customData);
+};
+
+/**
  * Track custom event
  */
 export const trackCustomEvent = (eventName: string, params?: Record<string, any>) => {
